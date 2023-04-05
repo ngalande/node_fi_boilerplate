@@ -26,6 +26,7 @@ import { ApplicationProvider, IconRegistry, } from '@ui-kitten/components';
 import {NodeKitProvider} from '@node-fi/react-native-sdk';
 import {ChainId} from '@node-fi/chain-config';
 import { useCreateWallet, useWallet, useWalletAddress } from "@node-fi/react-native-sdk";
+import WalletButton from './walletabutton';
 
 
 
@@ -61,7 +62,8 @@ export default function App(props){
         <Text>Pappi B</Text>
       </View>
       <View>
-        <Button onPress={() => test()} title='Test' />
+        <WalletButton />
+        {/* <Button onPress={() => test()} title='Test' /> */}
       </View>
     </NodeKitProvider>
 </>
