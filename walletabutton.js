@@ -5,8 +5,6 @@ export default function WalletButton(){
     const createWallet = useCreateWallet();
     const test = () => {
       console.log('second')
-      // const account = ethers.Wallet.createRandom()
-      // console.log(account.address)
         createWallet()
           .then((res) =>{
             console.log(res.address)
@@ -23,7 +21,7 @@ export default function WalletButton(){
         
         <Button
             onPress={()=> test()}
-            title='Text'
+            title='Create Wallet'
             />
                 
       )
